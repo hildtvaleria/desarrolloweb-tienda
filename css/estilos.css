@@ -119,11 +119,19 @@ main .titulo-producto {
 main section .img-producto {
   width: 15%;
 }
+main section .card-img-top {
+  height: 200px;
+  width: 100%;
+}
 
 main .titulo-contacto {
   font-family: "Edu TAS Beginner", cursive;
   font-size: 30px;
-  margin: 50px 30px;
+  margin: 20px 10px 20px 10px;
+  background: #ddcaa7;
+}
+main .contacto-casillas {
+  margin-left: 10px;
 }
 
 footer {
@@ -151,10 +159,13 @@ footer .footer-redes img {
   header {
     flex-direction: column;
   }
-  header .logo {
+  header nav {
+    width: 90%;
+  }
+  header nav .logo {
     width: 30%;
   }
-  header ul {
+  header nav ul {
     font-size: 15px;
     flex-direction: row;
     justify-content: space-around;
@@ -173,31 +184,54 @@ footer .footer-redes img {
   main h3 {
     font-size: small;
     text-align: justify;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   main .padre-flex {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  main .padre-flex p {
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    flex-direction: column p;
-    flex-direction-display: flex;
-    flex-direction-flex-direction: column;
-    flex-direction-justify-content: center;
   }
   main .padre-flex img {
-    border: solid 5px;
+    border: solid #DBA440 5px;
   }
-  .nosotros {
+  main .nosotros {
     font-size: 15px;
     text-align: center;
+    margin: 10px 20px 0 20px;
   }
   .d-flex {
     flex-direction: column;
+    justify-content: center;
+    margin: 10px 30px 10px 30px;
+  }
+  main .titulo-producto {
+    font-size: 20px;
+    padding: 15px 15px 15px 15px;
+  }
+  main .col {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 30px 10px 30px;
+  }
+  main .titulo-contacto {
+    font-size: 20px;
   }
   footer p {
     text-align: start;
+    justify-content: space-around;
   }
   footer .footer-redes {
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
   }
   footer .footer-redes img {
     width: 50px;

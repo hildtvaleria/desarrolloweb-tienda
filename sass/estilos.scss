@@ -101,6 +101,10 @@ main{
     .img-producto{
       width: 15%;
     }
+    .card-img-top{
+      height: 200px;
+      width: 100%;
+    }
   }
 }
 //Contacto
@@ -108,7 +112,11 @@ main{
   .titulo-contacto{
     font-family: 'Edu TAS Beginner', cursive;
     font-size: 30px;
-    margin: 50px 30px;
+    margin: 20px 10px 20px 10px;
+    background: #ddcaa7;
+  }
+  .contacto-casillas{
+    margin-left: 10px;
   }
 }
 
@@ -141,6 +149,8 @@ footer{
 @media screen  and (max-width:480px){
   header{
     flex-direction: column;
+    nav{
+      width: 90%;
     .logo{
       width: 30%;
      }
@@ -152,6 +162,8 @@ footer{
       margin-bottom: 10px;
      }
    }
+  }
+   //index
    main{
     .banner{
       padding: 20px 0;
@@ -165,38 +177,71 @@ footer{
     h3{
         font-size: small;
         text-align:justify;
+       padding-right:  20px;
+       padding-left: 20px;
     }
     .padre-flex{
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 50px;
+        margin-right: 50px;
       p{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content:space-around;
     }
     img{
-      border:solid 5px
+      border:solid $colorheader 5px
+
   }
    }
      
    }
    //nosotros mq
+  main{
    .nosotros{
     font-size: 15px;
     text-align: center;
+    margin: 10px 20px 0 20px;
    }
+  }
    .d-flex{
     flex-direction: column;
+    justify-content: center;
+    margin: 10px 30px 10px 30px;
     }
+
+//productos mq
+main{
+  .titulo-producto{
+    font-size: 20px;
+    padding: 15px 15px 15px 15px;
+  }
+  .col{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 30px 10px 30px;
+  }
+}
+
+//contacto
+main{
+  .titulo-contacto{
+    font-size: 20px;
+  }
+}
+
     //footer mq
     footer{
       p{
         text-align:start;
+        justify-content: space-around;
       }
       .footer-redes{
         flex-direction: row;
-        justify-content:center;
+        justify-content:space-around;
         img{
           width: 50px;
        }
