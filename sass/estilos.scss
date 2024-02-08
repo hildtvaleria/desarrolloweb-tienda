@@ -14,9 +14,8 @@ $colorheader: #DBA440;
   box-sizing: border-box;
 }
 
-
 //main index
-main{
+  
   .banner{
     background-image: url(../imagenes/BANNER-FRUTAS.jpg);
    max-width: 100%;
@@ -64,17 +63,18 @@ main{
       border:solid $colorheader 15px
     }
   }
-  .INFO-COMPRA{
+  .info-compra{
     width: 100px;
     border: none;
   }
-} 
+
 
 //Nosotros
 main{
   .nosotros{
     font-family: 'Edu TAS Beginner', cursive;
     font-size: 30px;
+    margin-left: 15px;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -83,6 +83,9 @@ main{
   height: 70vh;
   background-size: cover;
   border: none;
+}
+.card-body{
+  background-color: #ddcaa7;
 }
 }
 
@@ -98,9 +101,13 @@ main{
     background-color: #ddcaa7;
   }
   section{
+    h1{
+      font-size: 25px;
+    }
     .img-producto{
       width: 15%;
     }
+    
     .card-img-top{
       height: 200px;
       width: 100%;
@@ -144,7 +151,6 @@ footer{
 }
 
 }
-
 //mediaq
 @media screen  and (max-width:480px){
   header{
@@ -248,3 +254,55 @@ main{
     }
     }
 }
+@media screen and (min-width:481px) and (max-width:978px){
+  header{
+    flex-direction: column;
+    .logo{
+      height: 100px;
+      width: 100px;
+    }
+    nav{
+      width: 90%;
+      a{
+       font-size: 1.5rem;
+     }
+     ul{
+      width: 100%;
+      justify-content: space-around;
+     }
+    
+   }
+  }
+  //index mq
+  main{
+    .banner{
+      padding: 20px 20px;
+    }
+    .padre-flex{
+      display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    
+    }
+  }
+//nosotros mq
+main{
+  .nosotros{
+    font-size: 25px;
+    text-align: center;
+    margin: 15px;
+  }
+}
+  //productos mq
+  main{
+    .d-flex{
+      img{
+    height: 100px;
+      }
+    }
+  }
+  
+  }
+  

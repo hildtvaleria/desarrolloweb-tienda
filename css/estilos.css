@@ -43,7 +43,7 @@ header nav ul li:hover {
   box-sizing: border-box;
 }
 
-main .banner {
+.banner {
   background-image: url(../imagenes/BANNER-FRUTAS.jpg);
   max-width: 100%;
   background-repeat: no-repeat;
@@ -51,7 +51,7 @@ main .banner {
   padding: 130px 0;
   height: auto;
 }
-main .banner h1 {
+.banner h1 {
   font-family: "Edu TAS Beginner", cursive;
   font-size: 70px;
   text-align: center;
@@ -59,7 +59,7 @@ main .banner h1 {
   color: black;
   text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
 }
-main .banner h2 {
+.banner h2 {
   font-family: "Edu TAS Beginner", cursive;
   font-size: 50px;
   text-align: center;
@@ -67,30 +67,33 @@ main .banner h2 {
   color: black;
   text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
 }
-main H3 {
+
+H3 {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
 }
-main .padre-flex {
+
+.padre-flex {
   display: flex;
   justify-content: space-around;
 }
-main .padre-flex a {
+.padre-flex a {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 20px;
   color: black;
   text-decoration: none;
 }
-main .padre-flex p {
+.padre-flex p {
   display: flex;
   justify-content: center;
 }
-main .padre-flex img {
+.padre-flex img {
   border: solid #DBA440 15px;
 }
-main .INFO-COMPRA {
+
+.info-compra {
   width: 100px;
   border: none;
 }
@@ -98,6 +101,7 @@ main .INFO-COMPRA {
 main .nosotros {
   font-family: "Edu TAS Beginner", cursive;
   font-size: 30px;
+  margin-left: 15px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -107,6 +111,9 @@ main .carousel-inner img {
   background-size: cover;
   border: none;
 }
+main .card-body {
+  background-color: #ddcaa7;
+}
 
 main .titulo-producto {
   font-size: 30px;
@@ -115,6 +122,9 @@ main .titulo-producto {
   padding: 30px;
   text-align: center;
   background-color: #ddcaa7;
+}
+main section h1 {
+  font-size: 25px;
 }
 main section .img-producto {
   width: 15%;
@@ -235,6 +245,43 @@ footer .footer-redes img {
   }
   footer .footer-redes img {
     width: 50px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 978px) {
+  header {
+    flex-direction: column;
+  }
+  header .logo {
+    height: 100px;
+    width: 100px;
+  }
+  header nav {
+    width: 90%;
+  }
+  header nav a {
+    font-size: 1.5rem;
+  }
+  header nav ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+  main .banner {
+    padding: 20px 20px;
+  }
+  main .padre-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  main .nosotros {
+    font-size: 25px;
+    text-align: center;
+    margin: 15px;
+  }
+  main .d-flex img {
+    height: 100px;
   }
 }
 
